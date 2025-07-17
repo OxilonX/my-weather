@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <form class="form" action="">
+          <input
+            type="text"
+            class="temperature"
+            value=""
+            placeholder="Enter a country/city name..."
+          />
+          <button class="submit">submit</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <div class="weather-card">
+        <div class="container">
+          <div class="weather-card-content">
+            <div class="city-container">
+              <span class="city">Adrar ,</span>
+              <span class="country">Algeria</span>
+            </div>
+            <div class="weather-icon-container">
+              <img
+                class="weather-icon"
+                src="https://openweathermap.org/img/wn/01n.png"
+                alt=""
+              />
+              <div class="display">29&#x2103;</div>
+              <p class="weather-description">Expect Clear Sky Today</p>
+            </div>
+            <ul class="weather-infos">
+              <li>
+                <img
+                  class="weather-infos-icons"
+                  src="icons/icons8-wind-64.png"
+                  alt=""
+                />
+                <div class="wind">11 km/hr</div>
+              </li>
+              <li>
+                <img
+                  class="weather-infos-icons"
+                  src="icons/icons8-water-64.png"
+                  alt=""
+                />
+                <div class="humidity">11 %</div>
+              </li>
+              <li>
+                <img
+                  class="weather-infos-icons"
+                  src="icons/icons8-pressure-gauge-64.png"
+                  alt=""
+                />
+                <div class="pressure">1009 hPa</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
