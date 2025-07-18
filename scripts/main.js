@@ -18,7 +18,7 @@ window.onload = () => {
 };
 function displayWeatherData(data) {
   city.innerText = `${data.city},`;
-  countryDiv.innerText = `${data.country}`;
+  countryDiv.innerText = `${data.country}` || "Unkown";
   weatherIcon.src = `https://openweathermap.org/img/wn/${data.src}.png`;
   weatherDescription.innerText = `Expect ${data.weatherdescription} today.`;
   temperature.innerHTML = `${data.temperature}&#x2103;`;
