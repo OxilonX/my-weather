@@ -42,7 +42,7 @@ async function getWeatherData(e) {
       const data = await response.json();
       dataObj = {
         city: data.name,
-        country: data.sys.country,
+        country: data.sys.country || "Unknown",
         src: data.weather[0].icon,
         weatherdescription: data.weather[0].description,
         temperature: Math.trunc(data.main.temp - 271),
