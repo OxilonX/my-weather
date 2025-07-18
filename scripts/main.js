@@ -25,8 +25,9 @@ function displayWeatherData(data) {
   windDiv.innerText = `${data.windSpeed} km/hr`;
   humidityDiv.innerText = `${data.humidity} %`;
   pressureDiv.innerText = `${data.pressure} hPa`;
+  input.placeholder = "Enter a country/city name...";
+  input.value = "";
 }
-
 async function getWeatherData(e) {
   e.preventDefault();
   country = input.value.toString();
@@ -35,7 +36,7 @@ async function getWeatherData(e) {
       `https://api.openweathermap.org/data/2.5/weather?q=${country}&appid=0d079cca0483cab722af0cf500758aab`
     );
     if (!response.ok) {
-      input.placeholder = "Enter a country/city name...";
+      input.placeholder = "City/Country not found.";
       input.value = "";
       return;
     } else {
